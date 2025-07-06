@@ -11,6 +11,7 @@ class AnonymousDemo {
 
 interface Hello {
     void show();
+    void great();
 }
 
 class Outer {
@@ -85,9 +86,16 @@ class Outer {
             {
                 System.out.println("i am in Anonymous Inner class2");
             }
+
+            @Override
+            public void great()
+            {
+                System.out.println("God is great");
+            }
         };
 
         h1.show();
+        h1.great();
     }
 }
 
@@ -98,6 +106,11 @@ public class InnerClass1 {
         public void show()
         {
             System.out.println("i am in static Anonymous Inner class");
+        }
+
+        public void great()
+        {
+            System.out.println("God is great");
         }
     };
     public static void main(String[] args) {
@@ -127,5 +140,6 @@ public class InnerClass1 {
 
         // Static Anonymous Inner class can be used directly
         h.show();
+        h.great();
     }
 }
