@@ -31,7 +31,7 @@ public class MultipleInheritInterface2 {
         System.out.println(a instanceof One);
         Two c = new Child();
         System.out.println(c instanceof Child);
-        // c.a =15; error as c is final
+        // c.a =15; error as a is final
 
         //As c is of Two type this operation os not allowed
         // System.out.println(c.a);
@@ -45,6 +45,7 @@ public class MultipleInheritInterface2 {
         c.print_for();
 
         // c.print_geek(); //error as c is of Two type it cannot access print_greek
+        // not able to do virtual method invocation
 
         a.print_geek();
     }
