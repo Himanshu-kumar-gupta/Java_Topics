@@ -8,5 +8,7 @@ public class Enum5Inner {
     public static void main(String[] args) {
         Color c1 = Color.RED;
         System.out.println(c1);
+        System.out.println(Color.GREEN);
     }
 }
+
