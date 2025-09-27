@@ -49,10 +49,9 @@ enum Day {
 public class Enum4Abstract {
     public Day day;
 
-    //Using anonymous class here
     public Enum4Abstract(Day day) {
         this.day = day;
-    };
+    }
 
     public static void main (String[] args) {
       Enum4Abstract daynum = new Enum4Abstract(Day.MONDAY );
@@ -62,3 +61,4 @@ public class Enum4Abstract {
       System.out.println("The "+daynum.day.name()+" is "+daynum.day.getNumberOfDay());
     }  
 }
+
